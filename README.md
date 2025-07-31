@@ -29,7 +29,7 @@ A comprehensive reward management system built with Next.js, MongoDB, and TypeSc
 
 Create a `.env.local` file in the root directory:
 
-\`\`\`env
+```env
 # MongoDB Configuration
 MONGODB_URI=mongodb://localhost:27017
 MONGODB_DB_NAME=reward_system
@@ -43,35 +43,35 @@ SMTP_FROM="Reward System" <your-email@gmail.com>
 
 # Application URL
 NEXT_PUBLIC_APP_URL=http://localhost:3000
-\`\`\`
+```
 
 ### For Production (MongoDB Atlas):
-\`\`\`env
+```env
 MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/reward_system?retryWrites=true&w=majority
-\`\`\`
+```
 
 ## 🚀 Installation & Setup
 
 1. **Clone the repository**
-\`\`\`bash
+```bash
 git clone <repository-url>
 cd reward-system
-\`\`\`
+```
 
 2. **Install dependencies**
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
 3. **Set up MongoDB**
    - **Local**: Install MongoDB and start the service
    - **Cloud**: Create a MongoDB Atlas cluster and get connection string
 
 4. **Configure environment variables**
-\`\`\`bash
+```bash
 cp .env.example .env.local
 # Edit .env.local with your actual values
-\`\`\`
+```
 
 5. **Set up Gmail SMTP (recommended)**
    - Enable 2-factor authentication on Gmail
@@ -79,9 +79,9 @@ cp .env.example .env.local
    - Use the app password in `SMTP_PASS`
 
 6. **Run the development server**
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 7. **Access the application**
    - Open [http://localhost:3000](http://localhost:3000)
@@ -124,12 +124,12 @@ The system automatically creates these MongoDB collections:
 
 The system includes 24 premium brand vouchers:
 
-**Featured Brands**: Amazon, Starbucks, Netflix, Spotify, Apple, Google
+**Featured Brands**: Amazon, Starbucks, Netflix, Spotify, Apple, Google  
 **Categories**: Shopping, Food & Beverage, Entertainment, Gaming, Health & Fitness, Fashion, Education, Travel
 
 ## 🔧 Development
 
-\`\`\`bash
+```bash
 # Development server
 npm run dev
 
@@ -141,7 +141,7 @@ npm start
 
 # Lint code
 npm run lint
-\`\`\`
+```
 
 ## 📧 Email Configuration
 
